@@ -1,0 +1,101 @@
+#ff6188
+#fc9867
+#ffd866
+#a9dc76
+#78dce8
+#ab9df2
+#c1c0c0
+#939293 -- border
+#727072 
+#5b595c
+#403e41
+#fcfcfa -- text
+#2d2a2e -- background
+#19181a -- dark2
+#221f22 -- dark1
+
+[mgr]
+cwd = { fg = "#fcfcfa" }
+
+hovered         = { reversed = true }
+preview_hovered = { reversed = true }
+
+tab_active   = { reversed = true }
+tab_inactive = {}
+tab_width    = 1
+
+# default bg
+count_copied   = { fg = "#1f1f28", bg = "#a9dc76" }
+count_cut      = { fg = "#1f1f28", bg = "#ff6188" }
+count_selected = { fg = "#1f1f28", bg = "#ffd866" }
+
+# Find
+find_keyword  = { bg = "#fcfcfa", fg = "#ff6188", bold = true, italic = false, underline = false }
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#939293" }
+
+[which]
+cols = 2
+separator = " | "
+separator_style = { fg = "#292B30" } 
+mask = { bg = "#2d2a2e" } # dark bg
+rest = { fg = "#727169" } # darkgrey
+cand = { fg = "#fcfcfa" }
+desc = { fg = "#565666" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "reset", bg = "#363646" }
+
+# default bg
+mode_normal = { fg = "#1f1f28", bg = "#fcfcfa", bold = true }
+mode_select = { fg = "#1f1f28", bg = "#ff6188", bold = true }
+mode_unset  = { fg = "#1f1f28", bg = "#ffd866", bold = true }
+
+progress_label  = { fg = "#78dce8", bg = "#363646", bold = true }
+progress_normal = { fg = "#363646", bg = "#1f1f28" }
+progress_error  = { fg = "#363646", bg = "#1f1f28" }
+
+permissions_t = { fg = "#a9dc76" }
+permissions_r = { fg = "#ffd866" }
+permissions_w = { fg = "#ff6188" }
+permissions_x = { fg = "#fc9867" }
+permissions_s = { fg = "#78dce8" }
+
+[input]
+border   = { fg = "#78dce8" } # blue
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#78dce8" } # blue
+active   = { reversed = true }
+inactive = {}
+
+[tasks]
+border  = { fg = "#78dce8" } # blue
+title   = {}
+hovered = { fg = "#ab9df2" } # magenta
+
+[help]
+on      = { fg = "#78dce8" } # cyan
+run     = { fg = "#ab9df2" } # magenta
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#19181a", bg = "#fcfcfa" } # #fcfcfa
+
+# files
+[filetype]
+rules = [
+    { mime = "image/*", fg = "#ffd866" },
+    { mime = "{audio,video}/*", fg = "#78dce8" },
+    { mime = "application/{,g}zip", fg = "#ff6188" },
+    { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "#ff6188" },
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#ab9df2" },
+    { url = "*", fg = "#fcfcfa" },
+    { url = "*/", fg = "#a9dc76"},
+]

@@ -1,0 +1,42 @@
+[flavor]
+dark = "monokai-pro"
+
+[[icon.prepend_dirs]]
+name = "Anotações"
+text = ""
+
+[[icon.prepend_dirs]]
+name = "Arduino"
+text = ""
+
+[[icon.prepend_dirs]]
+name = "Documentos"
+text = ""
+
+[[icon.prepend_dirs]]
+name = "Imagens"
+text = ""
+
+[[icon.prepend_dirs]]
+name = "Jogos"
+text = "󰮂"
+
+[[icon.prepend_dirs]]
+name = "Musicas"
+text = ""
+
+[[icon.prepend_dirs]]
+name = "Objetos"
+text = "󰆧"
+
+[[icon.prepend_dirs]]
+name = "Playground"
+text = "󱊈"
+
+[[icon.prepend_dirs]]
+name = "Projetos"
+text = ""
+
+[[icon.prepend_dirs]]
+name = "server"
+text = "󰒋"
